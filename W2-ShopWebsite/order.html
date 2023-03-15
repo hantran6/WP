@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Product</title>
+</head>
+<body>
+    <!-- Header Section starts -->
+    <center>
+        <header>
+            <a href="./index.html">
+                <img src="./assets/images/store-logo.png" width="600" alt="shop-logo">
+            </a>
+
+            <br>
+            <br>
+
+            <nav>
+                <div>
+                    <b>
+                        <a href="./index.html#bracelet">Bracelets</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./index.html#earring">Earrings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./index.html#ring">Rings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#collection-video">Collection Video</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#location">Our Location</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./order.html">Buy Now!</a>
+                    </b>
+                </div>
+            </nav>
+
+            <br>
+        </header>
+    <!-- Header Section ends -->
+
+    <!-- Banner Section starts -->
+    <section>
+        <img src="./assets/images/shop-banner.png" width="1200" alt="shop-banner">
+    </section>
+    <!-- Banner Section ends -->
+
+    <!-- Order Form Section starts -->
+    <section style="width: 600px;">
+            <h2>Order Products Form</h2>
+            <form action="form-processing" method="post" id="order-form">
+            <!-- Personal Info starts -->
+            <fieldset>                
+                <legend>Please enter your personal information</legend>
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname" required>
+                <br>
+                <br>
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname" required>
+                <br>
+                <br>
+                <label for="dob">Date of Birth: </label>
+                <input type="date" id="dob" name="dob" required>           
+            </fieldset>
+
+            <br>
+
+            <!-- Shipping Info starts -->
+            <fieldset>
+                <legend>Please enter your shipping information</legend>
+                <label for="address">Address: </label>
+                <input type="text" id="fname" name="fname" required>
+                <br>
+                <br>
+                <label for="city">City: </label>
+                <select name="city" id="city" required>
+                    <option value>Select a city</option>
+                    <option value="ho-chi-minh">Ho Chi Minh</option>
+                    <option value="ha-noi">Ha Noi</option>
+                    <option value="da-nang ">Da Nang</option>
+                </select>
+                <br>
+                <br>
+                <label for="district">District: </label>
+                <select name="district" id="district" required>
+                    <option value>Select a district</option>
+                    <option value="district-1">District 1</option>
+                    <option value="district-2">District 2</option>
+                    <option value="district-3">District 3</option>
+                    <option value="district-4">District 4</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="postcode">Postcode: </label>
+                <input type="number" id="postcode" name="postcode" required>
+            </fieldset>
+
+            <br>
+
+            <!-- Purchase option starts -->
+            <fieldset>
+                <legend>Purchase Options</legend>
+                <label for="product">Select product(s): </label>
+                <select name="product" id="product" style="width: 300px; height: 100px;" multiple>
+                    <option value="bracelet-1">Bracelet - Tiffany Hardwear</option>
+                    <option value="bracelet-2">Bracelet - Tiffany T</option>
+                    <option value="bracelet-3">Bracelet - Tiffany Victoria</option>
+                    <option value="earring-1">Earring - Tiffany Hardwear</option>
+                    <option value="earring-2">Earring - Tiffany T</option>
+                    <option value="earring-3">Earring - Tiffany Victoria </option>
+                    <option value="ring-1">Ring - Tiffany Knot</option>
+                    <option value="ring-2">Ring - Tiffany Soleste</option>
+                    <option value="ring-3">Ring - Tiffany & Co Schlumberger</option>                    
+                </select>
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Order Now!">
+            </form>        
+    </section>
+    <!-- Order Form Section ends -->
+
+    <!-- Additional Info Section starts -->
+    <section>
+        <table>
+            <tr>
+                <td>
+                    <div id="collection-video">
+                        <center>
+                            <h2>Collection Video 🎥</h2>
+                            <iframe width="550" height="300" src="https://www.youtube.com/embed/x2Gck0ICbNY" title="Tiffany &amp; Co. — Tiffany Lock x ROSÉ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </center>  
+                    </div>
+                </td>
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+
+                <td>
+                    <div id="location">
+                        <center>
+                            <h2>Our Location 🗺️</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16126824.640407613!2d102.0301776921513!3d9.314382004746346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f03d4992a5d%3A0x14623e5b140d949!2sTiffany%20%26%20Co.!5e0!3m2!1svi!2s!4v1678877913827!5m2!1svi!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </center>
+                    </div>                        
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Additional Info Section ends -->
+
+    <!-- Footer Section starts -->
+    <section>
+        <hr width="1100">
+        <h3>Contact Us</h3>
+        <img src="./assets/images/facebook-icon.png" width="30" alt="facebook-icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./assets/images/ig-icon.png" width="30" alt="ig-icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./assets/images/twitter-icon.png" width="30" alt="twitter-icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./assets/images/youtube-icon.png" width="30" alt="youtube-icon">
+        <br>
+        <br>
+        <hr width="1100">
+        
+        <p>© Copyright 2023 by Han Tran<p>
+        
+</section>
+<!-- Footer Section ends -->
+    </center>
+</body>
+</html>
